@@ -1,0 +1,37 @@
+<!-- SyncML Meta Information Version 1.0.1   2001-06-15   -->
+<!-- Copyright Notice
+Copyright (c) Ericsson, IBM, Lotus, Matsushita Communication Industrial Co. Ltd., Motorola, Nokia, Palm, Inc., Psion, Starfish Software (2000,2001). All Rights Reserved.
+Implementation of all or part of any Specification may require licenses under third party intellectual property rights, including without limitation, patent rights (such a third party may or may not be a Supporter). The Sponsors of the Specification are not responsible and shall not be held responsible in any manner for identifying or failing to identify any or all such third party intellectual property rights.
+THIS DOCUMENT AND THE INFORMATION CONTAINED HEREIN ARE PROVIDED ON AN "AS IS" BASIS WITHOUT WARRANTY OF ANY KIND AND ERICSSON, IBM, LOTUS, MATSUSHITA COMMUNICATION INDUSTRIAL CO. LTD, MOTOROLA, NOKIA, PALM INC., PSION, STARFISH SOFTWARE AND ALL OTHER SYNCML SPONSORS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL ERICSSON, IBM, LOTUS, MATSUSHITA COMMUNICATION INDUSTRIAL CO. LTD, MOTOROLA, NOKIA, PALM INC., PSION, STARFISH SOFTWARE OR ANY OTHER SYNCML SPONSOR BE LIABLE TO ANY PARTY FOR ANY LOSS OF PROFITS, LOSS OF BUSINESS, LOSS OF USE OF DATA, INTERRUPTION OF BUSINESS, OR FOR DIRECT, INDIRECT, SPECIAL OR EXEMPLARY, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES OF ANY KIND IN CONNECTION WITH THIS DOCUMENT OR THE INFORMATION CONTAINED HEREIN, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE.
+The above notice and this paragraph must be included on all copies of this document that are made. -->
+<!-- This DTD defines a sequence of meta-information that is used within the SyncML DTD. The DTD is to be identified by the URN string "syncml:metinf". Single element types from this name space can be referenced as follows:
+    <element xmlns='syncml:metinf'>blah, blah</element>
+Comments should be sent to syncml@syncml.org -->
+<!-- Root or Document Element and -->
+<!ELEMENT MetInf (Format?, Type?, Mark?, Size?, Anchor?, Version?, NextNonce?, MaxMsgSize?, EMI*, Mem?)>
+<!-- Format or encoding type -->
+<!ELEMENT Format (#PCDATA)>
+<!-- Element specific type specification -->
+<!ELEMENT Type (#PCDATA)>
+<!-- Mark -->
+<!ELEMENT Mark (#PCDATA)>
+<!-- Byte count -->
+<!ELEMENT Size (#PCDATA)>
+<!-- Data versioning info -->
+<!ELEMENT Anchor (Last?, Next)>
+<!ELEMENT Last (#PCDATA)>
+<!ELEMENT Next (#PCDATA)>
+<!ELEMENT Version (#PCDATA)>
+<!ELEMENT NextNonce (#PCDATA)>
+<!ELEMENT MaxMsgSize (#PCDATA)>
+<!-- Experimental Meta Information extension -->
+<!ELEMENT EMI (#PCDATA)>
+<!-- Dynamic Memory -->
+<!ELEMENT Mem (SharedMem?, FreeMem, FreeID)>
+<!-- Free Memory in the number of identifiers -->
+<!ELEMENT FreeID (#PCDATA)>
+<!-- Free Memory in bytes -->
+<!ELEMENT FreeMem (#PCDATA)>
+<!-- Shared Memory -->
+<!ELEMENT SharedMem EMPTY>
+<!-- End of DTD -->

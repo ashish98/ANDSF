@@ -1,0 +1,45 @@
+/**
+* CSS Style File
+*/
+
+
+BODY         {
+	background-color : "#FFFFFF";
+	leftmargin:"0";
+	topmargin:"0";
+	marginwidth :0;
+	marginheight :0;
+}
+/* h1           { font-family: Arial; font-size: 16pt; font-weight: bold }
+h2           { font-family: Arial; font-size: 13pt; font-weight: bold; color: #5D0D7D }
+ul           { font-family: Arial; font-size: 11pt }
+input        { font-family: Arial; font-size: pt; }
+td           { font-family: Arial; font-size: 10pt }
+h3           { font-family: Arial; font-size: 12pt; font-weight:bold } */
+
+
+TABLE.LOG_IN_TABLE{
+	height: 100%;
+	width: 100%;
+	cellspacing:0;
+	cellpadding:0;
+	background-color: #005197 ;
+	position: fixed;
+	border : 0;
+}
+
+.textboxusername{background-image:url('../images/user.png');background-repeat:no-repeat;padding-left:29px;background-position:8px center;border:1px solid #323232;border-radius:5px 5px 5px 5px;padding-bottom:2px;height: 20px; width:110px;  font-size: 12px; }
+.textboxpassword{background-image:url('../images/key.png');background-repeat:no-repeat;padding-left:29px;background-position:8px center;border:1px solid #323232;border-radius:5px 5px 5px 5px;padding-bottom:2px;height: 20px;width:110px; font-size: 12px; }
+.errorClass{
+	color: red;
+	font-size: 11pt
+}
+ul.login-error-message {
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+

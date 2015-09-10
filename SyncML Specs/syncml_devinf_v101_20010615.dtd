@@ -1,0 +1,39 @@
+<!-- SyncML Device Information Version 1.0.1   2001-06-15   -->
+<!--Copyright NoticeCopyright NoticeCopyright (c) Ericsson, IBM, Lotus, Matsushita Communication IndustrialCo., LTD, Motorola, Nokia, Palm, Inc., Psion, Starfish Software (2000,2001).All Rights Reserved.  Implementation of all or part of any Specification may require licenses under third party intellectual property rights, including without limitation, patent rights (such a third party may or may not be a Supporter). The Sponsors of the Specification are not responsible and shall not be held responsible in any manner for identifying or failing to identify any or all such third party intellectual property rights.THIS DOCUMENT AND THE INFORMATION CONTAINED HEREIN ARE PROVIDED ON AN"AS IS" BASIS WITHOUT WARRANTY OF ANY KIND AND ERICSSON, IBM, LOTUS,MATSUSHITA COMMUNICATION INDUSTRIAL CO. LTD, MOTOROLA, NOKIA, PALM INC.,PSION, STARFISH SOFTWARE AND ALL OTHER SYNCML SPONSORS DISCLAIM ALLWARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTYTHAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS ORANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULARPURPOSE. IN NO EVENT SHALL ERICSSON, IBM, LOTUS, MATSUSHITA COMMUNICATIONINDUSTRIAL CO., LTD, MOTOROLA, NOKIA, PALM INC., PSION, STARFISH SOFTWAREOR ANY OTHER SYNCML SPONSOR BE LIABLE TO ANY PARTY FOR ANY LOSS OF PROFITS,LOSS OF BUSINESS, LOSS OF USE OF DATA, INTERRUPTION OF BUSINESS, OR FORDIRECT, INDIRECT, SPECIAL OR EXEMPLARY, INCIDENTAL, PUNITIVE ORCONSEQUENTIAL DAMAGES OF ANY KIND IN CONNECTION WITH THIS DOCUMENT OR THEINFORMATION CONTAINED HEREIN, EVEN IF ADVISED OF THE POSSIBILITY OF SUCHLOSS OR DAMAGE.The above notice and this paragraph must be included on all copies of this document that are made. --><!-- This DTD defines device information that is used within the SyncML DTD.This DTD is to be identified by the URN string "syncml:devinf". -->
+<!-- Root element -->
+<!ELEMENT DevInf (VerDTD, Man?, Mod?, OEM?, FwV?, SwV?, HwV?, DevID, DevTyp, DataStore+, CTCap*, Ext*)>
+<!ELEMENT Man (#PCDATA)>
+<!ELEMENT Mod (#PCDATA)>
+<!ELEMENT OEM (#PCDATA)>
+<!ELEMENT FwV (#PCDATA)>
+<!ELEMENT SwV (#PCDATA)>
+<!ELEMENT HwV (#PCDATA)>
+<!ELEMENT DevID (#PCDATA)>
+<!ELEMENT DevTyp (#PCDATA)>
+<!ELEMENT DataStore (SourceRef, DisplayName?, MaxGUIDSize?, Rx-Pref, Rx*, Tx-Pref, Tx*, DSMem?, SyncCap)>
+<!ELEMENT MaxGUIDSize (#PCDATA)>
+<!ELEMENT Rx-Pref (CTType, VerCT)>
+<!ELEMENT Rx (CTType, VerCT)>
+<!ELEMENT Tx-Pref (CTType, VerCT)>
+<!ELEMENT Tx (CTType, VerCT)>
+<!ELEMENT DSMem (SharedMem?, MaxMem?, MaxID?)>
+<!ELEMENT SharedMem EMPTY>
+<!ELEMENT SourceRef (#PCDATA)>
+<!ELEMENT DisplayName (#PCDATA)>
+<!ELEMENT CTCap ((CTType, (PropName, (ValEnum+ | (DataType, Size?))?,DisplayName?, (ParamName, (ValEnum+ | (DataType, Size?))?,DisplayName?)*)+)+)>
+<!ELEMENT CTType (#PCDATA)>
+<!ELEMENT DataType (#PCDATA)>
+<!ELEMENT Size (#PCDATA)>
+<!ELEMENT PropName (#PCDATA)>
+<!ELEMENT ValEnum (#PCDATA)>
+<!ELEMENT ParamName (#PCDATA)>
+<!ELEMENT SyncCap (SyncType+)>
+<!ELEMENT SyncType (#PCDATA)>
+<!ELEMENT Ext (XNam,XVal*)>
+<!ELEMENT XNam (#PCDATA)>
+<!ELEMENT XVal (#PCDATA)>
+<!ELEMENT MaxMem (#PCDATA)>
+<!ELEMENT MaxID (#PCDATA)>
+<!ELEMENT VerCT (#PCDATA)>
+<!ELEMENT VerDTD (#PCDATA)>
+<!-- End of DTD -->

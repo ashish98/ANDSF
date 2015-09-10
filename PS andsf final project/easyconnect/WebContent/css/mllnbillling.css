@@ -1,0 +1,81 @@
+.blk-header {  font-family: Arial; font-size: 11px; font-weight: bold; color: #000000; border: #959593; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}
+.blue-header {  font-family: Arial; font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #0069A0; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 6px}
+.top-header { font-family: Arial; font-size: 10px; font-weight: bold; color: #000000; border: #959593 solid; background-color: #A9A9A9 ; border-width: 0px 0px 1px}
+
+.left-navigation {  font-family: Arial; font-size: 12px; font-style: normal; color: #FFFFFF; border: #005B90 solid; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 5px; border-width: 0px 0px 1px}
+.navigation { background-color: #0069A0; height:360px; width:158px;}
+
+.btm-border {  font-family: Arial; font-size: 6px; font-style: normal; border: #CCCCCC; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}
+.left-border {  border: #CCCCCC; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 1px; font-family: Arial; font-size: 12px; font-style: normal; font-weight: bold; color: #000000; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px}
+.top-right-border { font-family: Arial; font-size: 6px; font-style: normal; border: #CCCCCC solid; border-width: 1px 1px 0px}
+.left-blue-border { border: #CCCCCC; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 1px; font-family: Arial; font-size: 12px; font-style: normal; font-weight: bold; color: #000000; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px ; background-color: #0069A0}
+
+.footer-text { font-family: Arial; font-size: 9px; color: #000000 ; background-color: #C3C3C1; text-align: right}
+.blue-text { font-family: Arial; font-size: 12px; font-weight: bold; color: #0069A0 }
+.text { font-family: Arial; font-size: 12px; color: #000000}
+.amount-text {  font-family: Arial; font-size: 12px; color: #000000; font-weight: normal; padding-top: 0px; padding-right: 2px; padding-bottom: 0px; padding-left: 0px; text-align: right }
+.table-text { font-family: Arial; font-size: 12px; color: #000000 ; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 6px}
+.field-text {  font-family: Arial; font-size: 12px; color: #000000; font-weight: bold; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 6px}
+.message-text { font-family: Arial; font-size: 12px; color: #FF0000; font-weight: bold }
+.lable-text { font-family: Arial; font-size: 9px; color: #000000 ; text-align: center}
+.textbox-text { font-family: Arial; font-size: 12px; color: #000000 ; text-align: left;padding-bottom: 5px }
+.label-blue-header-text { font-family: Arial; font-size: 9px; color: #FFFFFF ; background-color: #0069A0; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 6px; text-align: center}
+.disabled-text { font-family: Arial; font-size: 12px; font-style: normal; color: #777777; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 6px; }
+.star-text { font-family: Arial; font-size: 17px; color: #ff0000; font-weight: bold }
+.disabled-row { font-family: Arial; font-size: 9px; color: #000000 ; background-color: #C3C3C1;}
+.dualbox-header{ font-family: Arial; font-size: 12px; font-weight: bold ;color: #000000; border: #FFFFFF solid; border-width: 1px 1px 1px 0px; background-color: #D9E6F6; padding-left: 3px; line-height: 19px}
+.defualt-row{ background-color: #FFFFFF;font-family: Arial; font-size: 12px; }
+.selected-row{ background-color: #EEEEEE ;font-family: Arial; font-size: 12px; }
+.labeltext{width:150px;padding-left:29px;background-repeat:no-repeat;background-position:8px center;border:1px solid #323232;border-radius:5px 5px 5px 5px;padding-bottom:2px; height: 22px;}
+.usernameimg{background-image:url('../images/user.png');}
+.passwordimg{background-image:url('../images/key.png');}
+.captchaimg{background-image:url('../images/lockkey.png');}
+
+a{text-decoration:underline; color:#000000}
+a:hover{text-decoration:none; color:#000000}
+
+.top-header a{text-decoration:none; color:#000000}
+.top-header a:hover{text-decoration:none; color:#FFFFFF}
+
+.left-navigation a{text-decoration:none; color:#FFFFFF}
+.left-navigation a:hover{text-decoration:underline; color:#FFFFFF}
+
+.blue-text a{text-decoration:underline; color:#0069A0}
+.blue-text a:hover{text-decoration:none; color:#0069A0}
+
+a.white{text-decoration:underline; color:#FFFFFF}
+a:hover.white{text-decoration:none; color:#FBFBD2}
+
+.white a{text-decoration:underline; color:#FFFFFF}
+.white a:hover{text-decoration:none; color:#FFFFFF}
+
+.disabled-link a{text-decoration:none; color:#CCCCCC}
+.disabled-link a:hover{text-decoration:underline; color:#CCCCCC}
+
+.disabled-text a{text-decoration:underline; color:#777777}
+.disabled-text a:hover{text-decoration:none; color:#777777}
+
+/*button*/
+.tiny_button{position: relative;width: 80;height: 25;font-family: arial,helvetica,sans-serif;font-size: 9pt;}
+.medium_button{position: relative;width: 120;height: 25;font-family: arial,helvetica,sans-serif;font-size: 9pt;}
+.large_button{position: relative;width: 160;height: 25;font-family: arial,helvetica,sans-serif;font-size: 9pt;}
+
+/*selection box*/
+select.tinyselect{position: relative;width:50;font-family: arial,helvetica,sans-serif;font-size: 10pt;}
+select.smallselect{position: relative;width:70;font-family: arial,helvetica,sans-serif;font-size: 10pt;}
+select.mediumselect{position: relative;width:120;font-family: arial,helvetica,sans-serif;font-size: 10pt;}
+select.bigselect{position: relative;width: 180;font-family: arial,helvetica,sans-serif;font-size: 10pt;}
+select.largeselect{position: relative;width:250;font-family: arial,helvetica,sans-serif;font-size: 10pt;}
+select.xlselect{position: relative;width: 300;font-family: arial,helvetica,sans-serif;font-size: 10pt;}
+select.otherselect{position: relative;width: 200;font-family: arial,helvetica,sans-serif;font-size: 10pt;}
+
+/*this class is for error message while login in operation manager */
+.login-error-message{ color: #FFFFFF;font-family: Arial; font-size: 15px; font-weight:bold; }
+
+/*this class is to make a text box look like a label*/
+.text-noborders {
+ border: 0px none #FFFFFF;
+ font-family: Arial;
+ font-size: 12px;
+ color: #000000;
+}

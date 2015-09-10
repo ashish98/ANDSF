@@ -1,0 +1,281 @@
+IDENTIFYING INFORMATION
+#######################
+APPID: w7.
+APPID type: OMNA.
+Owner: Device Management Working Group. 
+Contact: Device Management Working Group <OMA-DM@MAIL.OPENMOBILEALLIANCE.ORG>. 
+Registration version: 2.
+Registration timestamp: 2008-05-22.
+Application description: Device Management (DM). 
+Application reference: 
+	OMA Device Management, Version 1.2 specifications,
+	URL:http://www.openmobilealliance.org/Technical/release_program/dm_v1_2.aspx.
+	" Device Management Tree and Description" specification,
+	URL: http://www.openmobilealliance.org/Technical/release_program/docs/DM/V1_2-20070209-A/OMA-TS-DM_TND-V1_2-20070209-A.pdf
+	"Device Management Security" specification,
+	URL: http://www.openmobilealliance.org/Technical/release_program/docs/DM/V1_2-20070209-A/OMA-TS-DM_Security-V1_2-20070209-A.pdf
+	"Device Management Representation Protocol" specification,
+	URL: http://www.openmobilealliance.org/Technical/release_program/docs/DM/V1_2-20070209-A/OMA-TS-DM_RepPro-V1_2-20070209-A.pdf
+
+LEGAL DISCLAIMER
+
+Use of this document is subject to all of the terms and conditions
+of the Use Agreement located at
+	http://www.openmobilealliance.org/UseAgreement.html
+
+You may use this document or any part of the document for internal
+or educational purposes only, provided you do not modify, edit or
+take out of context the information in this document in any manner.
+Information contained in this document may be used, at your sole
+risk, for any purposes.
+
+You may not use this document in any other manner without the prior
+written permission of the Open Mobile Alliance.  The Open Mobile
+Alliance authorizes you to copy this document, provided that you
+retain all copyright and other proprietary notices contained in the
+original materials on any copies of the materials and that you
+comply strictly with these terms.  This copyright permission does
+not constitute an endorsement of the products or services.  The
+Open Mobile Alliance assumes no responsibility for errors or
+omissions in this document.
+
+Each Open Mobile Alliance member has agreed to use reasonable
+endeavors to inform the Open Mobile Alliance in a timely manner of
+Essential IPR as it becomes aware that the Essential IPR is related
+to the prepared or published specification.  However, the members
+do not have an obligation to conduct IPR searches.  The declared
+Essential IPR is publicly available to members and non-members of
+the Open Mobile Alliance and may be found on the “OMA IPR
+Declarations” list at http://www.openmobilealliance.org/ipr.html.
+The Open Mobile Alliance has not conducted an independent IPR review
+of this document and the information contained herein, and makes no
+representations or warranties regarding third party IPR, including
+without limitation patents, copyrights or trade secret rights.  This
+document may contain inventions for which you must obtain licenses
+from third parties before making, using or selling the inventions.
+Defined terms above are set forth in the schedule to the Open Mobile
+Alliance Application Form.
+
+NO REPRESENTATIONS OR WARRANTIES (WHETHER EXPRESS OR IMPLIED) ARE
+MADE BY THE OPEN MOBILE ALLIANCE OR ANY OPEN MOBILE ALLIANCE MEMBER
+OR ITS AFFILIATES REGARDING ANY OF THE IPR’S REPRESENTED ON THE “OMA
+IPR DECLARATIONS” LIST, INCLUDING, BUT NOT LIMITED TO THE ACCURACY,
+COMPLETENESS, VALIDITY OR RELEVANCE OF THE INFORMATION OR WHETHER OR
+NOT SUCH RIGHTS ARE ESSENTIAL OR NON-ESSENTIAL.
+
+THE OPEN MOBILE ALLIANCE IS NOT LIABLE FOR AND HEREBY DISCLAIMS ANY
+DIRECT, INDIRECT, PUNITIVE, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR
+EXEMPLARY DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OF
+DOCUMENTS AND THE INFORMATION CONTAINED IN THE DOCUMENTS.
+
+© 2007 Open Mobile Alliance Ltd.  All Rights Reserved.
+Used with the permission of the Open Mobile Alliance Ltd. under the
+terms set forth above.
+
+WELL-KNOWN PARAMETERS
+#####################
+Characteristic/name: APPLICATION/APPID.
+Status: Required.
+Occurs: 1/1.
+Default value: None.
+Used values: w7.
+Interpretation: N/A.
+-------
+Characteristic/name: APPLICATION/PROVIDER-ID.
+Status: Required.
+Occurs: 1/1.
+Default value: None.
+Used values: 
+	Server Identifier specified in "Device Management Tree and Description ".
+Interpretation: 
+	PROVIDER-ID specifies the server identifier for management server used in the management sessions.
+-------
+Characteristic/name: APPLICATION/NAME.
+Status: Optional.
+Occurs: 0/1.
+Default value: None.
+Used values: N/A.
+Interpretation: User displayable name for management server.
+-------
+Characteristic/name: APPLICATION/TO-PROXY.
+Status: Required if use of Proxy supported.
+Occurs: 0/*.
+Default value: None.
+Used values: N/A.
+Interpretation: N/A.
+-------
+Characteristic/name: APPLICATION/TO-NAPID.
+Status: Required if direct use of Network Access Point supported.
+Occurs: 0/*. 
+Default value: None.
+Used values: N/A.
+Interpretation: N/A.
+-------
+Characteristic/name: APPADDR/ADDR.
+Status: Required.
+Occurs: 1/1.
+Default value: None.
+Used values: Absolute URI.
+Interpretation: Management server address, which may differ based on the used transport binding. Also APPLICATION/ADDR can be used to specify the address, if the parameter APPADDR/ADDRTYPE is not used.
+-------
+Characteristic/name: APPADDR/ADDRTYPE.
+Status: Required.
+Occurs: 0/1.
+Default value: None.
+Used values: N/A.
+Interpretation: N/A.
+-------
+Characteristic/name: PORT/PORTNBR.
+Status: Required.
+Occurs: 0/1.
+Default value: None.
+Used values: N/A.
+Interpretation: N/A.
+-------
+Characteristic/name: APPAUTH/AAUTHLEVEL.
+Status: Required.
+Occurs: 0/1.
+Default value: None.
+Used values: "APPSRV", "CLIENT", "OBEX".
+Interpretation: 
+	When the value is omitted, the characteristic contains client credentials 
+	for HTTP or WSP authentication. The used values are described below.
+-------
+Characteristic/name: APPAUTH/AAUTHTYPE.
+Status: Required.
+Occurs: 11.
+Default value: None.
+Used values: 
+	"HTTP-BASIC", "HTTP-DIGEST", "BASIC", "DIGEST", "HMAC", "X509", "SECUREID", "SAFEWORD", "DIGIPASS", “TRANSPORT”.
+Interpretation:
+	See descriptions below. The values specific to the  OMADM protocol are
+	covered in "Device Management Security" and "Device Management Representation Protocol".
+-------
+Characteristic/name: APPAUTH/AAUTHNAME.
+Status: Required.
+Occurs: 0/1.
+Default value: None.
+Used values: N/A.
+Interpretation: N/A.
+-------
+Characteristic/name: APPAUTH/AAUTHSECRET.
+Status: Required.
+Occurs: 0/1.
+Default value: None.
+Used values: N/A.
+Interpretation: N/A.
+-------
+Characteristic/name: APPAUTH/AAUTHDATA.
+Status: Required.
+Occurs: 0/1.
+Default value: None.
+Used values: 
+	Nonce value.
+Interpretation: 
+	Contains the nonce value used in the OMADM authentication 
+	as specified in "Device Management Security".
+The nonce must be B64 encoded when placed in XML.  Any subsequent compression encoding, for example, using WBXML or LZW must start with the B64 encoded value, not the binary value.
+-------
+
+APPLICATION-SPECIFIC PARAMETERS
+###############################
+Characteristic/name: APPLICATION/INIT.
+Status: Required.
+Occurs: 0/1.
+Default value: None.
+Used values: 
+	N/A.
+Interpretation: 
+	Takes no values. When present indicates that the management server wants 
+	the client to initiate a management session immediately after settings approval.
+-------
+
+PARAMETER VALUES
+################
+Characteristic/name/parameter: APPAUTH/AAUTHLEVEL/APPSRV.
+Status: Required.
+Interpretation: 
+	Credentials client uses to authenticate itself to 
+	the OMA DM Server at the DM protocol level.
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHLEVEL/CLIENT.
+Status: Required.
+Interpretation:
+	Credentials server uses to authenticate itself to 
+	the OMA DM Client at the DM protocol level.
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHLEVEL/OBEX.
+Status: Optional.
+Interpretation: Client credentials for OBEX authentication.
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/HTTP-BASIC.
+Status: Optional.
+Interpretation: HTTP basic authentication done according to RFC 2617.
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/HTTP-DIGEST.
+Status: Optional.
+Interpretation: HTTP digest authentication done according to RFC 2617.
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/BASIC.
+Status: Required.
+Interpretation: DM 'syncml:auth-basic' authentication as specified in "Device Management Security".
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/DIGEST.
+Status: Required.
+Interpretation:  DM 'syncml:auth-md5' authentication as specified in "Device Management Security".
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/HMAC.
+Status: Optional.
+Interpretation: DM 'syncml:auth-hmac' authentication as specified in "Device Management Security".
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/X509.
+Status: Optional.
+Interpretation: 'syncml:auth-X509' authentication done according to "Device Management Representation Protocol".
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/SECURID.
+Status: Optional.
+Interpretation:  'syncml:auth-securid' authentication done according to "Device Management Representation Protocol".
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/SAFEWORD.
+Status: Optional.
+Interpretation: 'syncml:auth-safeword' authentication done according to "Device Management Representation Protocol".
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/DIGIPASS.
+Status: Optional.
+Interpretation: 'syncml:auth-digipass' authentication done according to "Device Management Representation Protocol".
+--------
+Characteristic/name/parameter: APPAUTH/AAUTHTYPE/TRANSPORT.
+Status: Optional.
+Interpretation: Secure Transport authentication is used. Transport level authentication is beyond the scope of OMA DM Security.
+--------
+
+EXAMPLE
+#######
+<characteristic type="APPLICATION">
+  <parm name="APPID" value="w7"/>
+  <parm name="PROVIDER-ID" value="com.mgmtsrv.manage"/>
+  <parm name="NAME" value="Mgmt Server"/>
+  <parm name="ADDR" value="http://www.mgmtserver.com:8080/manage"/>
+  <parm name="TO-NAPID" value="INTERNET"/>
+  <parm name="INIT"/>
+  <characteristic type="APPAUTH">
+    <parm name="AAUTHTYPE" value="HTTP-DIGEST"/>
+    <parm name="AAUTHNAME" value="client_http_id"/>
+    <parm name="AAUTHSECRET" value="client_http_secret"/>
+  </characteristic>
+  <characteristic type="APPAUTH">
+    <parm name="AAUTHLEVEL" value="CLIENT"/>
+    <parm name="AAUTHTYPE" value="DIGEST,BASIC"/>
+    <parm name="AAUTHNAME" value="server_id"/>
+    <parm name="AAUTHSECRET" value="serversecret"/>
+    <parm name="AAUTHDATA" value="servernonce"/>
+  </characteristic>
+  <characteristic type="APPAUTH">
+    <parm name="AAUTHLEVEL" value="APPSRV"/>
+    <parm name="AAUTHNAME" value="client_id"/>
+    <parm name="AAUTHSECRET" value="clientsecret"/>
+    <parm name="AAUTHDATA" value="clientnonce"/>
+  </characteristic>
+</characteristic>
+
+###END###

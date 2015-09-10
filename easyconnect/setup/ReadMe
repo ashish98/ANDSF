@@ -1,0 +1,29 @@
+Steps to configure easyconnect project in eclipse.
+
+1)	Import project in eclipse.
+2) 	Configure Tomcat server for application.
+3)	Double click on configured tomcat server and click on "Open launch configuration"
+4)	Select Environment teb from open wizard.
+5)	Add two environment variable in in.
+		Name	=	java.util.logging.manager
+		value	=	org.apache.logging.log4j.jul.LogManager
+
+		Name	=	org.jboss.logging.provider
+		Value	=	log4j2
+6) click on OK for save changes.
+7) Open context.xml of configured tomcat server and add following configuration at last and before close context tag in that file.
+	
+	<Resource name="jdbc/easyconnect" auth="Container" type="javax.sql.DataSource"
+		 driverClassName="oracle.jdbc.driver.OracleDriver" url="jdbc:oracle:thin:@192.168.0.157:1521:ora11g"
+		username="ELITEMONETIZE" password="ELITEMONETIZE" maxActive="100" maxIdle="10"
+	maxWait="10000" /> 
+
+8) Add environment variable in system environment variable.
+	Variable Name	=	LOG_HOME
+	Variable Value	=	Path of your log directory. Ex:- "D:\XYZ\WorkSpace\easyconnect\Logs"
+
+9) After this all configuration done. restart your PC once.
+
+That's all.
+	
+	

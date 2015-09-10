@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/ashish/AndroidStudioProjects/ANDSFparsing/app/libs/ksoap2-android-assembly-3.4.0-jar.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="45fbaab416fb5cff992e662d1f7a83786f084fc3">
+        <dex dex="/home/ashish/AndroidStudioProjects/ANDSFparsing/app/build/intermediates/pre-dexed/debug/ksoap2-android-assembly-3.4.0-jar-5832022835ceb9cae22ac67b18a2945b6cfe578e.jar" />
+    </item>
+    <item
+        jar="/home/ashish/workspace/android-sdk-linux/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/home/ashish/AndroidStudioProjects/ANDSFparsing/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-8f8bb929a3d4d706cfaedab9a96c270e41bead58.jar" />
+    </item>
+
+</items>

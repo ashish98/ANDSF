@@ -1,0 +1,71 @@
+#example ul {
+	padding-left:20px;
+}
+#example li {
+	list-style:none;
+}
+#example ul.hide {
+	display:none;
+}
+#example span {
+	color:#999;
+	font-family:"Courier New", Courier, monospace;
+	cursor:default;
+}
+#example span.expanded, #example span.collapsed {
+	cursor:pointer;
+}
+
+#serverlogs ul {
+	padding-left:20px;
+}
+#serverlogs li {
+	list-style:none;
+}
+#serverlogs ul.hide {
+	display:none;
+}
+#serverlogs span {
+	color:#999;
+	font-family:"Courier New", Courier, monospace;
+	cursor:default;
+}
+#serverlogs span.expanded, #serverlogs span.collapsed {
+	cursor:pointer;
+}
+
+#servicelogs ul {
+	padding-left:20px;
+}
+#servicelogs li {
+	list-style:none;
+}
+#servicelogs ul.hide {
+	display:none;
+}
+#servicelogs span {
+	color:#999;
+	font-family:"Courier New", Courier, monospace;
+	cursor:default;
+}
+#servicelogs span.expanded, #servicelogs span.collapsed {
+	cursor:pointer;
+}
+
+#cdrs ul {
+	padding-left:20px;
+}
+#cdrs li {
+	list-style:none;
+}
+#cdrs ul.hide {
+	display:none;
+}
+#cdrs span {
+	color:#999;
+	font-family:"Courier New", Courier, monospace;
+	cursor:default;
+}
+#cdrs span.expanded, #cdrs span.collapsed {
+	cursor:pointer;
+}

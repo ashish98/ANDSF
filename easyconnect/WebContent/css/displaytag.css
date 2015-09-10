@@ -1,0 +1,191 @@
+table.displayTable  {
+	/* border: 1px solid #666; */
+	font-size: 12px;
+	font-family: arial, helvetica, verdana, sans-serif;
+	width: 80%;
+	margin: 10px 0 10px 0 !important;
+}
+
+th {
+	padding: 2px 4px 2px 4px !important;
+	text-align: left;
+	vertical-align: top;
+	border-width: 1px 1px 1px 0px;
+    background-color: rgb(217, 230, 246);
+    line-height: 19px;
+}
+
+
+thead   {
+	border-width: 1px 1px 1px 0px;
+    background-color: rgb(217, 230, 246);
+    line-height: 19px;
+}
+
+th.sorted {
+	background-color: #A6C7FF;
+}
+
+ th a,th a:visited {
+	color: black;
+}
+
+ th a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+ th.sorted a,th.sortable a {
+	background-position: right;
+	display: block;
+	width: 100%;
+}
+
+ th.sortable a {
+	background-image: url(../img/arrow_off.png);
+}
+
+  th.order1 a {
+	background-image: url(../img/arrow_down.png);
+}
+
+ th.order2 a {
+	background-image: url(../img/arrow_up.png);
+}
+
+t.displayTable a
+{
+	text-decoration: underline;
+}
+
+tr.odd td
+{
+	border-color: rgb(204, 204, 204);
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+}
+
+tr.even td
+{
+	border-color: rgb(204, 204, 204);
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+}
+
+ tr.odd {
+ 	color: rgb(0, 0, 0);
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+    padding: 0px 0px 0px 3px;
+    line-height: 19px;
+	/* background-color: #fff */
+}
+
+ tr.tableRowEven,tr.even {
+ 	color: rgb(0, 0, 0);
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+    padding: 0px 0px 0px 3px;
+    line-height: 19px;
+    /* background-color: #fea */
+}
+	
+ tr.empty {
+ 	color: rgb(0, 0, 0);
+    border-color: rgb(204, 204, 204);
+    border: #CCCCCC;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    padding: 0px 0px 0px 3px;
+    line-height: 19px;
+    text-align: center;
+    /* background-color: #fea */
+}
+
+  div.exportlinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 79%;
+}
+
+  span.export {
+	padding: 0 4px 1px 20px;
+	display: inline;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.displayTable  span.excel {
+	background-image: url(../img/ico_file_excel.png);
+}
+
+.displayTable  span.csv {
+	background-image: url(../img/ico_file_csv.png);
+}
+
+.displayTable  span.xml {
+	background-image: url(../img/ico_file_xml.png);
+}
+
+.displayTable  span.pdf {
+	background-image: url(../img/ico_file_pdf.png);
+}
+
+.displayTable  span.rtf {
+	background-image: url(../img/ico_file_rtf.png);
+}
+
+
+div.pagelinks {
+	width: 79%;
+	color: #0069A0;
+	font-size: 12px;
+	font-family: arial, helvetica, verdana, sans-serif;
+}
+
+
+.chkColumn {
+	  width: 50px;  
+}
+td.center, th.center {
+	text-align: center;
+} 
+
+td.small, th.small {
+	width : 5%;
+} 
+.group-1 {
+    font-weight:bold;
+    padding-bottom:10px;
+    border-top:1px solid black;
+}
+.group-2 {
+    font-style:italic;
+    border-top: 1px solid black;
+
+}
+.subtotal-sum, .grandtotal-sum {
+    font-weight:bold;
+    text-align:right;
+}
+.subtotal-header {
+    padding-bottom: 0px;
+    border-top: 1px solid white;
+}
+.subtotal-label, .grandtotal-label {
+    border-top: 1px solid white;
+    font-weight: bold;
+}
+.grouped-table tr.even {
+    background-color: #fff;
+}
+.grouped-table tr.odd {
+    background-color: #fff;
+}
+.grandtotal-row {
+    border-top: 2px solid black;
+}
